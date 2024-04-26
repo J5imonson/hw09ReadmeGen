@@ -53,7 +53,7 @@ function questions() {
 
   ]).then((data) => {
 
-    fs.writeFile('README.md', generateMarkdown(data), (err) => err
+    fs.writeFile('generateREADME.md', generateMarkdown(data), (err) => err
       ? console.error('An error has occurred')
       : console.log('Success!')
     );
