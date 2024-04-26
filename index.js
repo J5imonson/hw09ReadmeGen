@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-
+ 
 function questions() {
   inquirer.prompt([
     {
@@ -28,7 +28,7 @@ function questions() {
       type: 'list',
       message: 'Please enter license information',
       name: 'license',
-      choices: '',
+      choices: ['Apache 2.0', 'Boost', 'IBM']
     },
     {
       type: 'input',
